@@ -1,7 +1,11 @@
 /** @format */
-
 const app = require("./app");
+const DatabaseConnection = require("./database/db");
+require("dotenv").config();
 
-app.listen(5050, () => {
-  console.log("server is running at 5050");
+//database connection and server run
+DatabaseConnection("database Connected", () => {
+  app.listen(process.env.PORT || 5000, () => {
+    console.log("server is running at 5000");
+  });
 });
