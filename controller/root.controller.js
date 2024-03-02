@@ -1,5 +1,4 @@
 /** @format */
-
 const rootController = (req, res) => {
   res.send("root router");
 };
