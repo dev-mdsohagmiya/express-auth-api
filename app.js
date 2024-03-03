@@ -5,6 +5,7 @@ const cors = require("cors");
 const morgan = require("morgan");
 const rootRouter = require("./routes/root.route");
 const authRouter = require("./routes/auth.route");
+const { registerSchema } = require("./model/auth");
 
 const app = express();
 app.use(

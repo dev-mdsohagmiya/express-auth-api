@@ -5,7 +5,7 @@ require("dotenv").config();
 
 //database connection and server run
 DatabaseConnection("database Connected", () => {
-  app.listen(process.env.PORT || 5000, () => {
+  app.listen(process.env.PORT || 5050, () => {
     console.log("server is running at 5000");
   });
 });
